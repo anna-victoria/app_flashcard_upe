@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_size">25sp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="largura_botao">60dp</dimen>
+    <dimen name="texto_botao">15sp</dimen>
+    <dimen name="subtitlesize">20sp</dimen>
+</resources>

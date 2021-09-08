@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FlashCard 2</string>
+    <string name="appname">Flashcard App</string>
+    <string name="addcard">Adicionar novo cartão</string>
+    <string name="meus_cartoes">Ver meus cartões</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="conceito">Conceito:</string>
+</resources>
