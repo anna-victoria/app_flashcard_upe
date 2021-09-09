@@ -6,4 +6,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="conceito">Conceito:</string>
+    <string name="definicao">Definição:</string>
+    <string name="palavra">Palavra:</string>
+    <string name="insira_palavra">Insira aqui a palavra.</string>
+    <string name="insira_def">Insira aqui a definição:</string>
 </resources>

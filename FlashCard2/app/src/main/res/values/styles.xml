@@ -14,4 +14,13 @@
         <item name="android:layout_marginTop">@dimen/layout_margin</item>
         <item name="android:textColor">@color/black</item>
     </style>
+
+    <style name="inserir">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:textSize">@dimen/texto_botao</item>
+    </style>
 </resources>
