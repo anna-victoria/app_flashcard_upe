@@ -5,7 +5,10 @@
       <map>
         <entry key="..\:/AndroidStudioProjects/FlashCard2/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/AndroidStudioProjects/FlashCard2/app/src/main/res/layout/activitymain2.xml" value="0.19882246376811594" />
+        <entry key="..\:/AndroidStudioProjects/FlashCard2/app/src/main/res/layout/criar_cartao_frag.xml" value="0.33" />
         <entry key="..\:/AndroidStudioProjects/FlashCard2/app/src/main/res/layout/fragment_criar_cartao.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/FlashCard2/app/src/main/res/layout/fragment_menu_principal.xml" value="0.2536231884057971" />
+        <entry key="..\:/AndroidStudioProjects/FlashCard2/app/src/main/res/layout/fragment_ver_cartoes.xml" value="0.2536231884057971" />
       </map>
     </option>
   </component>

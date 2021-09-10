@@ -2,4 +2,29 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation" />
+    android:id="@+id/navigation"
+    app:startDestination="@id/criarCartao">
+    z
+    <fragment
+        android:id="@+id/criarCartao"
+        android:name="com.example.flashcard2.BlankFragment"
+        android:label="fragment_criar_cartao"
+        tools:layout="@layout/fragment_criar_cartao" />
+    <fragment
+        android:id="@+id/menu_principal"
+        android:name="com.example.flashcard2.menu_principal"
+        android:label="fragment_menu_principal"
+        tools:layout="@layout/fragment_menu_principal" >
+        <action
+            android:id="@+id/action_menu_principal_to_criarCartao"
+            app:destination="@id/criarCartao" />
+        <action
+            android:id="@+id/action_menu_principal_to_verCartoes"
+            app:destination="@id/verCartoes" />
+    </fragment>
+    <fragment
+        android:id="@+id/verCartoes"
+        android:name="com.example.flashcard2.VerCartoes"
+        android:label="fragment_ver_cartoes"
+        tools:layout="@layout/fragment_ver_cartoes" />
+</navigation>

@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/layout_margin"
-    tools:context=".BlankFragment">
+    android:layout_marginLeft="@dimen/layout_margin"
+    android:layout_marginTop="@dimen/layout_margin"
+    android:layout_marginRight="@dimen/layout_margin"
+    android:layout_marginBottom="@dimen/layout_margin">
 
     <TextView
-        android:id="@+id/palavra2"
+        android:id="@+id/palavra"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto"
@@ -19,11 +22,10 @@
         tools:layout_editor_absoluteX="84dp" />
 
     <EditText
-        android:id="@+id/inserirpalavra3"
+        android:id="@+id/inserirpalavra"
         style="@style/inserir"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:hint="@string/insira_palavra"
         android:minHeight="48dp"
         android:textColorHint="#4A4A4A"
@@ -33,10 +35,9 @@
         app:layout_constraintTop_toBottomOf="@+id/palavra" />
 
     <TextView
-        android:id="@+id/definicao4"
+        android:id="@+id/definicao1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
         android:fontFamily="@font/roboto"
         android:text="@string/definicao"
         android:textColor="@color/black"
@@ -46,11 +47,11 @@
         tools:layout_editor_absoluteY="243dp" />
 
     <EditText
-        android:id="@+id/definicao5"
+        android:id="@+id/definicao"
         style="@style/inserir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="214dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="@string/insira_def"
         android:inputType="textPersonName"
@@ -60,4 +61,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/definicao1" />
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

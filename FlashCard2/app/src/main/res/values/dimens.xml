@@ -6,4 +6,5 @@
     <dimen name="largura_botao">60dp</dimen>
     <dimen name="texto_botao">15sp</dimen>
     <dimen name="subtitlesize">20sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 </resources>
