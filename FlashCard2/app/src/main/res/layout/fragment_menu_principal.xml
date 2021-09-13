@@ -1,32 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".menu_principal">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menuConstraint"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/layout_margin"
-        android:layout_marginTop="@dimen/layout_margin"
-        android:layout_marginRight="@dimen/layout_margin"
-        android:layout_marginBottom="@dimen/layout_margin"
-        android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".TitleFragment">
 
         <TextView
             android:id="@+id/app_name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="78dp"
             android:fontFamily="@font/roboto"
             android:paddingBottom="45dp"
             android:text="@string/appname"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="@dimen/title_size" />
+            android:textSize="@dimen/title_size"
+            app:layout_constraintBottom_toTopOf="@+id/addflashcardbutton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/addflashcardbutton"
@@ -40,7 +36,11 @@
             android:paddingBottom="4dp"
             android:text="@string/addcard"
             android:textColor="@color/black"
-            android:textSize="@dimen/texto_botao" />
+            android:textSize="@dimen/texto_botao"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_name" />
 
         <Button
             android:id="@+id/button2"
@@ -54,8 +54,10 @@
             android:paddingBottom="4dp"
             android:text="@string/meus_cartoes"
             android:textColor="@color/black"
-            android:textSize="@dimen/texto_botao" />
-
-    </LinearLayout>
-
-</FrameLayout>
+            android:textSize="@dimen/texto_botao"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addflashcardbutton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

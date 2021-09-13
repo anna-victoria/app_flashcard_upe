@@ -1,64 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginLeft="@dimen/layout_margin"
-    android:layout_marginTop="@dimen/layout_margin"
-    android:layout_marginRight="@dimen/layout_margin"
-    android:layout_marginBottom="@dimen/layout_margin">
-
-    <TextView
-        android:id="@+id/palavra"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto"
-        android:text="@string/palavra"
-        android:textColor="@color/black"
-        android:textSize="@dimen/subtitlesize"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="84dp" />
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:layout_marginBottom="@dimen/layout_margin">
 
-    <EditText
-        android:id="@+id/inserirpalavra"
-        style="@style/inserir"
-        android:layout_width="match_parent"
-        android:layout_marginTop="32dp"
-        android:hint="@string/insira_palavra"
-        android:minHeight="48dp"
-        android:textColorHint="#4A4A4A"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/palavra" />
+        <TextView
+            android:id="@+id/palavra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/palavra"
+            android:textColor="@color/black"
+            android:textSize="@dimen/subtitlesize"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="84dp" />
 
-    <TextView
-        android:id="@+id/definicao1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto"
-        android:text="@string/definicao"
-        android:textColor="@color/black"
-        android:textSize="@dimen/subtitlesize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="243dp" />
+        <EditText
+            android:id="@+id/inserirpalavra"
+            style="@style/inserir"
+            android:layout_width="match_parent"
+            android:layout_marginTop="32dp"
+            android:hint="@string/insira_palavra"
+            android:minHeight="48dp"
+            android:textColorHint="#4A4A4A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/palavra" />
 
-    <EditText
-        android:id="@+id/definicao"
-        style="@style/inserir"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:hint="@string/insira_def"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColorHint="#4A4A4A"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/definicao1" />
+        <TextView
+            android:id="@+id/definicao1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/definicao"
+            android:textColor="@color/black"
+            android:textSize="@dimen/subtitlesize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="243dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/definicao"
+            style="@style/inserir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/insira_def"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#4A4A4A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/definicao1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
